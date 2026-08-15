@@ -8,16 +8,54 @@ data:
   settings.yaml: |
     title: Homelab
 
+    layout:
+      Infrastructure:
+        style: row
+        columns: 3
+      Services:
+        style: row
+        columns: 3
+
   services.yaml: |
     - Infrastructure:
         - Kubernetes:
-            description: Homelab Kubernetes Cluster
+            icon: kubernetes.png
+            description: Kubernetes Cluster
+
+        - Pi-hole:
+            icon: pi-hole.png
+            href: http://pihole.home.arpa
+            description: DNS & Network Ad Blocking
+
+        - Traefik:
+            icon: traefik.png
+            description: Reverse Proxy
+
+    - Services:
+        - Plex:
+            icon: plex.png
+            href: http://plex.home.arpa
+            description: Media Server
+
+        - Home Assistant:
+            icon: home-assistant.png
+            href: http://ha.home.arpa
+            description: Home Automation
 
   kubernetes.yaml: |
     mode: cluster
 
   widgets.yaml: |
-    []
+    - search:
+        provider: duckduckgo
+        target: _blank
+
+    - datetime:
+        text_size: xl
+        format:
+          dateStyle: short
+          timeStyle: short
+          hour12: true
 
   bookmarks.yaml: |
     []
