@@ -29,6 +29,7 @@ data:
 
         - Traefik:
             icon: traefik.png
+            href: http://traefik.home.arpa
             description: Reverse Proxy
 
     - Services:
