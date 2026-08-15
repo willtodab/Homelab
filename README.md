@@ -155,7 +155,7 @@ I also write small Bash utilities to automate repetitive administration tasks.
 
 Those scripts live in a separate repository:
 
-**[`bash-scripts`](../bash-scripts)**
+**[bash-scripts](https://github.com/willtodab/bash-scripts)**
 
 ---
 
