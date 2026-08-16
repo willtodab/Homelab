@@ -26,6 +26,11 @@ data:
             icon: pi-hole.png
             href: http://pihole.home.arpa
             description: DNS & Network Ad Blocking
+            widget:
+              type: pihole
+              url: http://pihole.home.arpa
+              version: 6
+              key: "{{HOMEPAGE_VAR_PIHOLE_KEY}}"
 
         - Traefik:
             icon: traefik.png
